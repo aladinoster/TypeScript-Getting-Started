@@ -2,25 +2,20 @@ function startGame() {
     // starting a new game
 
     let playerName: string | number = 'Audrey';
-    playerName = 42;
-    playerName = 'Andres';
     logPlayer(playerName);
 
-    let nullableString: string | null;
-    nullableString = null;
+    var messagesElement: HTMLElement | string;
 
-    let misteryString: string | null | undefined;
-    misteryString = null;
-    misteryString = undefined;
+    if (typeof messagesElement == 'string') {
+        return messagesElement;
+    }
+    else {
+        return messagesElement;
+    }
 
-    let value: any = 5;
-    let fixedString: string = (<number>value).toFixed(4)
-    console.log(fixedString); // 5.0000
+    messagesElement = 43;
 
-    fixedString = (value as number).toFixed(4);
-    console.log(fixedString);
-
-    var messagesElement = document.getElementById('messages');
+    messagesElement = document.getElementById('messages');
     messagesElement!.innerText = 'Welcome to MultiMath! Starting new Game Andy...!';
 }
 
