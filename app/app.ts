@@ -13,6 +13,13 @@ function startGame() {
     misteryString = null;
     misteryString = undefined;
 
+    let value: any = 5;
+    let fixedString: string = (<number>value).toFixed(4)
+    console.log(fixedString); // 5.0000
+
+    fixedString = (value as number).toFixed(4);
+    console.log(fixedString);
+
     var messagesElement = document.getElementById('messages');
     messagesElement!.innerText = 'Welcome to MultiMath! Starting new Game Andy...!';
 }

@@ -8,6 +8,11 @@ function startGame() {
     var misteryString;
     misteryString = null;
     misteryString = undefined;
+    var value = 5;
+    var fixedString = value.toFixed(4);
+    console.log(fixedString);
+    fixedString = value.toFixed(4);
+    console.log(fixedString);
     var messagesElement = document.getElementById('messages');
     messagesElement.innerText = 'Welcome to MultiMath! Starting new Game Andy...!';
 }
