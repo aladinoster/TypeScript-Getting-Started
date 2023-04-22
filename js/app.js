@@ -1,15 +1,7 @@
 function startGame() {
     var playerName = 'Audrey';
     logPlayer(playerName);
-    var messagesElement;
-    if (typeof messagesElement == 'string') {
-        return messagesElement;
-    }
-    else {
-        return messagesElement;
-    }
-    messagesElement = 43;
-    messagesElement = document.getElementById('messages');
+    var messagesElement = document.getElementById('messages');
     messagesElement.innerText = 'Welcome to MultiMath! Starting new Game Andy...!';
 }
 function logPlayer(name) {
